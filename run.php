@@ -18,7 +18,6 @@ $circle = new Shapes\Circle(90);
 
 $cube = new Shapes\Cube(25);
 $sphere = new Shapes\Sphere(9);
-$sphere  = null;
 
 $shapes = [ $square, $circle, $cube, $sphere ];
 $area = $calculator->surfaceArea($shapes);
