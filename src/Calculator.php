@@ -12,7 +12,17 @@ class Calculator {
 	 */
 	public function surfaceArea(array $shapes)
 	{
-		return "undefined";
+        $total = 0;
+        foreach ($shapes as $s) {
+            if ($s){
+                if (method_exists($s,"volume")) { //if there's volume method then this is a 3d object
+                    $total += $s->surface_area();
+                }
+
+                }
+
+        }
+		return $total;
 	}
 
 	/**
@@ -23,7 +33,17 @@ class Calculator {
 	 */
 	public function totalVolume(array $shapes)
 	{
-		return "undefined";
+        $total = 0;
+        foreach ($shapes as $s) {
+            if ($s){
+                if (method_exists($s,"volume")) { //if there's volume method then this is a 3d object
+                    $total += $s->volume();
+                }
+
+                }
+
+        }
+		return $total;
 	}
 
 }

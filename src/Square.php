@@ -25,7 +25,7 @@ class Square implements ShapeInterface {
 	 */
 	public function area()
 	{
-		return sqrt($this->side);
+		return (pow($this->side,2));
 	}
 
 	/**

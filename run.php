@@ -4,15 +4,22 @@ include_once('config/global.php');
 include_once('src/Calculator.php');
 include_once('src/Square.php');
 include_once('src/Circle.php');
+include_once('src/Cube.php');
+include_once('src/Sphere.php');
 
 // The calculator
 $calculator = new Shapes\Calculator;
 
 // Define our shapes
 $square = new Shapes\Square(25);
+$square = null;
 $circle = new Shapes\Circle(90);
-$cube = NULL;
-$sphere = NULL;
+$circle = null;
+
+
+$cube = new Shapes\Cube(25);
+$sphere = new Shapes\Sphere(9);
+$sphere  = null;
 
 $shapes = [ $square, $circle, $cube, $sphere ];
 $area = $calculator->surfaceArea($shapes);
