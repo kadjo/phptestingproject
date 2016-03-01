@@ -45,6 +45,19 @@ class ExampleTest extends\PHPUnit_Framework_TestCase {
         $this->assertEquals($sphere->volume(),268.08257310633);
         $this->assertEquals($sphere->surface_area(), 201.06192982975);
         
+
+
+        //
+
+        $square = new Shapes\Square(4);
+        $this->assertEquals($square->area(),16);
+        $this->assertEquals($square->perimeter(), 16);        
+
+
+        $circle = new Shapes\Circle(3);
+        $this->assertEquals($circle->area(),28.274333882308);
+        $this->assertEquals($circle->perimeter(),18.849555921539);        
+
     }
 
 }
