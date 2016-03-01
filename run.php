@@ -12,10 +12,9 @@ $calculator = new Shapes\Calculator;
 
 // Define our shapes
 $square = new Shapes\Square(25);
-$square = null;
 $circle = new Shapes\Circle(90);
-$circle = null;
 
+///Define 3d Objects
 
 $cube = new Shapes\Cube(25);
 $sphere = new Shapes\Sphere(9);
